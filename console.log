@@ -1,4 +1,4 @@
-//-------------------------- 3/11/2017 -- 19:38:08 -----
+//-------------------------- 3/11/2017 -- 21:35:43 -----
 Processor Init:
    Intel Pentium II, ~2.30 Ghz
    FPU detected
@@ -60,7 +60,7 @@ GFXCardProfiler (D3D9) - Setting capability 'independentMrtBitDepth' to 1.
       - No card profile core/gfxprofile/D3D9...cs exists
       - No card profile core/gfxprofile/D3D9....cs exists
 Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 731fb00 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 78b1540 has 2 ref's
 --- Resetting D3D Device ---
 [Win32FileSystemChangeNotifier::internalAddNotification] : failed on [C:\Users\alexa\Data\sharpShooter\Kurt\????s] [123]
 --------------
@@ -72,9 +72,9 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 7320140 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 78b1680 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 731ff60 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 78b1180 has 2 ref's
 --- Resetting D3D Device ---
 
 sfxStartup...
@@ -125,9 +125,9 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 731ff60 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 78b15e0 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 77d3760 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 7c01240 has 2 ref's
 --- Resetting D3D Device ---
 Missing file: tools/gui/profiles.ed.cs!
 --------------------------------------------------------------------------------
@@ -147,9 +147,9 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 77d3b20 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 7c01380 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 77d3b20 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 7c00ca0 has 2 ref's
 --- Resetting D3D Device ---
 parse error
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
@@ -204,141 +204,19 @@ Activating DirectInput...
 *** Control Object Changed
 Mapping string: PlayerTexture=darkgreen_PlayerTexture to index: 9
 Mapping string: PlayerTexture=blue_PlayerTexture to index: 10
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
+==>resetMission();
 *** MISSION RESET
 ==>resetMission();
 *** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
+==>resetMission();
 *** MISSION RESET
 ==>resetMission();
 *** MISSION RESET
+==>resetMission();
 *** MISSION RESET
-No-one won
+==>resetMission();
 *** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-No-one won
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
-*** MISSION RESET
+==>resetMission();
 *** MISSION RESET
 *** MISSION RESET
 *** MISSION RESET

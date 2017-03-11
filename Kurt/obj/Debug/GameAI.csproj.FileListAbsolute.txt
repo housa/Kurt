@@ -8,3 +8,6 @@ C:\Users\alexa\Data\sharpShooter\Kurt\aiLibs\Kurt.pdb
 C:\Users\alexa\Data\sharpShooter\Kurt\aiProject\obj\Debug\GameAI.csprojResolveAssemblyReference.cache
 C:\Users\alexa\Data\sharpShooter\Kurt\aiProject\obj\Debug\Kurt.dll
 C:\Users\alexa\Data\sharpShooter\Kurt\aiProject\obj\Debug\Kurt.pdb
+C:\Users\alexa\Data\sharpShooter\Kurt\Kurt\obj\Debug\GameAI.csprojResolveAssemblyReference.cache
+C:\Users\alexa\Data\sharpShooter\Kurt\Kurt\obj\Debug\Kurt.dll
+C:\Users\alexa\Data\sharpShooter\Kurt\Kurt\obj\Debug\Kurt.pdb

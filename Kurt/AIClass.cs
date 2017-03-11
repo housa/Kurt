@@ -27,72 +27,36 @@ namespace GameAI
            if (tookDamage)
                return DodgeOpponent(vector);
            return PlayerAction.TurnRight;
-           return SearchForOpponent(vector);
        }
 
-       private static PlayerAction SearchForOpponent(FeatureVector vector)
-       {
-            Console.WriteLine("No sighting");
+        private static PlayerAction PursueOpponent(FeatureVector vector)
+        {
+            if (playerInRange && vector.ShootDelay == 0)
+                return PlayerAction.Shoot;
 
-            if (vector.DistanceToObstacleLeft < 4 || vector.DistanceToObstacleRight < 4)
+            if (tookDamage && vector.TicksSinceDamage > 12)
+                return PlayerAction.MoveLeft;
+
+            if (vector.DeltaDamageProb < 0.0)
             {
-                if (vector.DeltaRot != 0)
+                if (vector.DeltaRot > 0.0)
                 {
-                    Console.WriteLine("Obstacle - moving forward");
-                    return PlayerAction.MoveForward;
-                }
-                if (aiTurningRight)
-                {
-                    Console.WriteLine("Obstacle - turning right");
-                    return PlayerAction.TurnRight;
-                }
-                Console.WriteLine("Obstacle - turning left");
-                return PlayerAction.TurnLeft;
-            }
-            aiTurningRight = rnd.Next(0, 1) == 1;
-            int r = rnd.Next(0, 9);
-            switch (r)
-            {
-                case 0:
-                    Console.WriteLine("Random left turn");
                     return PlayerAction.TurnLeft;
-                case 1:
-                    Console.WriteLine("Random right turn");
-                    return PlayerAction.TurnRight;
-                default:
-                    Console.WriteLine("Moving forward");
-                    return PlayerAction.MoveForward;
+                }
+                return PlayerAction.TurnRight;
             }
+            if (vector.DeltaRot > 0.0)
+            {
+                return PlayerAction.TurnRight;
+            }
+            return PlayerAction.TurnLeft;
         }
 
-    private static PlayerAction PursueOpponent(FeatureVector vector)
-       {
-           if (playerInRange && vector.ShootDelay == 0)
-               return PlayerAction.Shoot;
-
-           if (tookDamage && vector.TicksSinceDamage > 12)
-               return PlayerAction.MoveLeft;
-
-           if (vector.DeltaDamageProb < 0.0)
-           {
-               if (vector.DeltaRot > 0.0)
-               {
-                   return PlayerAction.TurnLeft;
-               }
-               return PlayerAction.TurnRight;
-           }
-           if (vector.DeltaRot > 0.0)
-           {
-               return PlayerAction.TurnRight;
-           }
-           return PlayerAction.TurnLeft;
-       }
-
-       private static PlayerAction DodgeOpponent(FeatureVector vector)
-       {
-           if (vector.TickCount % 3 == 0)
-               return PlayerAction.MoveLeft;
-           return PlayerAction.TurnLeft;
-       }
+        private static PlayerAction DodgeOpponent(FeatureVector vector)
+        {
+            if (vector.TickCount % 3 == 0)
+                return PlayerAction.MoveLeft;
+            return PlayerAction.TurnLeft;
+        }
    }
 }
