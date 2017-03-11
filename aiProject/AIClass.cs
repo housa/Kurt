@@ -11,6 +11,10 @@ namespace GameAI
        private static bool tookDamage;
        private static bool playerInRange;
 
+       private static bool aiTurningRight = true;
+       private static Random rnd = new Random();
+
+
        [ConsoleFunction]
        public static PlayerAction Kurt(FeatureVector vector)
        {
@@ -27,10 +31,40 @@ namespace GameAI
 
        private static PlayerAction SearchForOpponent(FeatureVector vector)
        {
-           return PlayerAction.TurnLeft;
-       }
+            Console.WriteLine("No sighting");
 
-       private static PlayerAction PursueOpponent(FeatureVector vector)
+            if (vector.DistanceToObstacleLeft < 4 || vector.DistanceToObstacleRight < 4)
+            {
+                if (vector.DeltaRot != 0)
+                {
+                    Console.WriteLine("Obstacle - moving forward");
+                    return PlayerAction.MoveForward;
+                }
+                if (aiTurningRight)
+                {
+                    Console.WriteLine("Obstacle - turning right");
+                    return PlayerAction.TurnRight;
+                }
+                Console.WriteLine("Obstacle - turning left");
+                return PlayerAction.TurnLeft;
+            }
+            aiTurningRight = rnd.Next(0, 1) == 1;
+            int r = rnd.Next(0, 9);
+            switch (r)
+            {
+                case 0:
+                    Console.WriteLine("Random left turn");
+                    return PlayerAction.TurnLeft;
+                case 1:
+                    Console.WriteLine("Random right turn");
+                    return PlayerAction.TurnRight;
+                default:
+                    Console.WriteLine("Moving forward");
+                    return PlayerAction.MoveForward;
+            }
+        }
+
+    private static PlayerAction PursueOpponent(FeatureVector vector)
        {
            if (playerInRange && vector.ShootDelay == 0)
                return PlayerAction.Shoot;
