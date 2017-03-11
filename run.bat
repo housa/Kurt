@@ -1,1 +1,1 @@
-Game.exe -ai1 Kurt -ai2 FriskPige
+Game.exe -ai1 Kurt -ai2 BAI

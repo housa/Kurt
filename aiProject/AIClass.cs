@@ -35,6 +35,9 @@ namespace GameAI
            if (playerInRange && vector.ShootDelay == 0)
                return PlayerAction.Shoot;
 
+           if (tookDamage && vector.TicksSinceDamage > 12)
+               return PlayerAction.MoveLeft;
+
            if (vector.DeltaDamageProb < 0.0)
            {
                if (vector.DeltaRot > 0.0)
@@ -43,21 +46,18 @@ namespace GameAI
                }
                return PlayerAction.TurnRight;
            }
-           else
+           if (vector.DeltaRot > 0.0)
            {
-               if (vector.DeltaRot > 0.0)
-               {
-                   return PlayerAction.TurnRight;
-               }
-               return PlayerAction.TurnLeft;
+               return PlayerAction.TurnRight;
            }
-
-           return PlayerAction.MoveForward;
+           return PlayerAction.TurnLeft;
        }
 
        private static PlayerAction DodgeOpponent(FeatureVector vector)
        {
-           return PlayerAction.MoveForward;
+           if (vector.TickCount % 3 == 0)
+               return PlayerAction.TurnLeft;
+           return PlayerAction.MoveLeft;
        }
    }
 }
