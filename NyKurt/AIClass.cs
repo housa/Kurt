@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using Torque3D;
 using Torque3D.Engine.Util.Enums;
 using Torque3D.Util;
@@ -16,11 +16,11 @@ namespace GameAI
 
 
        [ConsoleFunction]
-       public static PlayerAction Kurt(FeatureVector vector)
+       public static PlayerAction NyKurt(FeatureVector vector)
        {
            tookDamage = vector.TicksSinceDamage < 15;
            inPursuit = vector.DamageProb > 0.0;
-           playerInRange = vector.DamageProb > 0.8;
+           playerInRange = vector.DamageProb > 0.75;
 
            if (inPursuit)
                return PursueOpponent(vector);
