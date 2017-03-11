@@ -90,8 +90,8 @@ namespace GameAI
        private static PlayerAction DodgeOpponent(FeatureVector vector)
        {
            if (vector.TickCount % 3 == 0)
-               return PlayerAction.TurnLeft;
-           return PlayerAction.MoveLeft;
+               return PlayerAction.MoveLeft;
+           return PlayerAction.TurnLeft;
        }
    }
 }
