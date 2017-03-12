@@ -1,18 +1,19 @@
-//-------------------------- 3/11/2017 -- 21:35:43 -----
+//-------------------------- 3/12/2017 -- 11:33:51 -----
 Processor Init:
-   Intel Pentium II, ~2.30 Ghz
+   AMD Phenom, ~3.01 Ghz
    FPU detected
    MMX detected
+   3DNow detected
    SSE detected
    SSE2 detected
-   HT detected
-   MP detected [2 cores, 4 logical, 1 physical]
+   MP detected [2 cores, 2 logical, 1 physical]
  
 Math Init:
    Installing Standard C extensions
    Installing Assembly extensions
    Installing FPU extensions
    Installing MMX extensions
+   Installing 3DNow extensions
    Installing SSE extensions
  
 Initializing platform...
@@ -32,7 +33,7 @@ GFXStringEnumTranslate: Unassigned value in GFXStringTextureFormat: 23
 Console trace disabled.
 
 --------- Parsing Arguments ---------
-Attempting to create GFX device: Intel(R) HD Graphics 5000 (D3D9) [\\.\DISPLAY1]
+Attempting to create GFX device: NVIDIA GeForce GTS 250 (D3D9) [\\.\DISPLAY1]
 Device created, setting adapter and enumerating modes
    Cur. D3DDevice ref count=1
    Pix version detected: 3.000000
@@ -60,9 +61,9 @@ GFXCardProfiler (D3D9) - Setting capability 'independentMrtBitDepth' to 1.
       - No card profile core/gfxprofile/D3D9...cs exists
       - No card profile core/gfxprofile/D3D9....cs exists
 Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 78b1540 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 77f720 has 2 ref's
 --- Resetting D3D Device ---
-[Win32FileSystemChangeNotifier::internalAddNotification] : failed on [C:\Users\alexa\Data\sharpShooter\Kurt\????s] [123]
+[Win32FileSystemChangeNotifier::internalAddNotification] : failed on [C:\SharpShooter\Kurt\????s] [123]
 --------------
 Attempting to set resolution to "1024 768 False 32 60 4"
 Accepted Mode: 
@@ -72,9 +73,9 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 78b1680 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 77f7c0 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 78b1180 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 77f7c0 has 2 ref's
 --- Resetting D3D Device ---
 
 sfxStartup...
@@ -87,12 +88,12 @@ SFXSystem::createDevice - created Null device 'SFX Null Device'
 Binding server port to default IP
 UDP initialized on port 0
 --------------------------------------------------------------------------------
-Module Manager: Started scanning 'C:/Users/alexa/Data/sharpShooter/Kurt/data'...
-Module Manager: Registering: 'C:/Users/alexa/Data/sharpShooter/Kurt/data/clientServer/ClientServer.module' [ ID='ClientServer', VersionId='1', BuildId='0', Description='Default module for the game.' ].
-Module Manager: Registering: 'C:/Users/alexa/Data/sharpShooter/Kurt/data/postFX/postFX.module' [ ID='PostFX', VersionId='1', BuildId='0', Description='Default PostFX elements' ].
-Module Manager: Registering: 'C:/Users/alexa/Data/sharpShooter/Kurt/data/spectatorGameplay/SpectatorGameplay.module' [ ID='SpectatorGameplay', VersionId='1', BuildId='0', Description='Default module for the game.' ].
-Module Manager: Registering: 'C:/Users/alexa/Data/sharpShooter/Kurt/data/ui/UI.module' [ ID='UI', VersionId='1', BuildId='0', Description='Module that implements the menus for the game.' ].
-Module Manager: Finished scanning 'C:/Users/alexa/Data/sharpShooter/Kurt/data'.
+Module Manager: Started scanning 'C:/SharpShooter/Kurt/data'...
+Module Manager: Registering: 'C:/SharpShooter/Kurt/data/clientServer/ClientServer.module' [ ID='ClientServer', VersionId='1', BuildId='0', Description='Default module for the game.' ].
+Module Manager: Registering: 'C:/SharpShooter/Kurt/data/postFX/postFX.module' [ ID='PostFX', VersionId='1', BuildId='0', Description='Default PostFX elements' ].
+Module Manager: Registering: 'C:/SharpShooter/Kurt/data/spectatorGameplay/SpectatorGameplay.module' [ ID='SpectatorGameplay', VersionId='1', BuildId='0', Description='Default module for the game.' ].
+Module Manager: Registering: 'C:/SharpShooter/Kurt/data/ui/UI.module' [ ID='UI', VersionId='1', BuildId='0', Description='Module that implements the menus for the game.' ].
+Module Manager: Finished scanning 'C:/SharpShooter/Kurt/data'.
 --------------------------------------------------------------------------------
 Module Manager: Loading group 'Game':
 Module Manager: Group 'Game' and its dependencies is comprised of the following '4' module(s):
@@ -106,16 +107,16 @@ Module Manager: Loading group 'Game' : module Id 'ClientServer' at version Id '1
 --------- Initializing Directory: scripts ---------
 
 --------- Initializing BaseGame: Server Scripts ---------
-C:/Users/alexa/Documents
+C:/Users/Homer/Documents
 
 --------- Initializing BaseGame: Client Scripts ---------
-C:/Users/alexa/Documents
+C:/Users/Homer/Documents
 --------------------------------------------------------------------------------
-Module Manager: Loading group 'Game' : module Id 'PostFX' at version Id '1' in group 'Game' using the script file 'C:/Users/alexa/Data/sharpShooter/Kurt/data/postFX/postFX.cs'.
+Module Manager: Loading group 'Game' : module Id 'PostFX' at version Id '1' in group 'Game' using the script file 'C:/SharpShooter/Kurt/data/postFX/postFX.cs'.
 
 --------- Initializing PostFX Directory: scripts ---------
 --------------------------------------------------------------------------------
-Module Manager: Loading group 'Game' : module Id 'UI' at version Id '1' in group 'Game' using the script file 'C:/Users/alexa/Data/sharpShooter/Kurt/data/ui/UI.cs'.
+Module Manager: Loading group 'Game' : module Id 'UI' at version Id '1' in group 'Game' using the script file 'C:/SharpShooter/Kurt/data/ui/UI.cs'.
 --------------
 Attempting to set resolution to "1024 768 False 32 60 4"
 Accepted Mode: 
@@ -125,14 +126,14 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 78b15e0 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 77f7c0 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 7c01240 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 72dd6e0 has 2 ref's
 --- Resetting D3D Device ---
 Missing file: tools/gui/profiles.ed.cs!
 --------------------------------------------------------------------------------
 Module Manager: Loading group 'Game' : module Id 'SpectatorGameplay' at version Id '1' in group 'Game' using the script file ''.
-C:/Users/alexa/Documents
+C:/Users/Homer/Documents
 --------------------------------------------------------------------------------
 Module Manager: Finish loading '4' module(s) for group 'Game'.
 --------------------------------------------------------------------------------
@@ -147,9 +148,9 @@ Accepted Mode:
 --Refresh Rate : 60 
 --FSAA Level : 4 
 --------------
-GFXPCD3D9Device::reset - depthstencil 7c01380 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 72dda00 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 7c00ca0 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 72ddaa0 has 2 ref's
 --- Resetting D3D Device ---
 parse error
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
@@ -204,23 +205,26 @@ Activating DirectInput...
 *** Control Object Changed
 Mapping string: PlayerTexture=darkgreen_PlayerTexture to index: 9
 Mapping string: PlayerTexture=blue_PlayerTexture to index: 10
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
-*** MISSION RESET
-==>resetMission();
 *** MISSION RESET
 *** MISSION RESET
 *** MISSION RESET
 *** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** MISSION RESET
+*** ENDING MISSION
+Exporting server prefs...
 Module Manager: Cannot unload explicit module Id 'Game' as it does not exist.
 --------------------------------------------------------------------------------
 Module Manager: Unloading group 'Game':
@@ -232,10 +236,9 @@ Module Manager: Unload group 'Game' with module Id 'UI' at version Id '1' in gro
 Module Manager: Unload group 'Game' with module Id 'PostFX' at version Id '1' in group 'Game'.
 --------------------------------------------------------------------------------
 Module Manager: Unload group 'Game' with module Id 'ClientServer' at version Id '1' in group 'Game'.
-*** ENDING MISSION
 Exporting server prefs...
 Exporting client prefs
-C:/Users/alexa/Documents
+C:/Users/Homer/Documents
 Exporting server prefs
 parse error
 --------------------------------------------------------------------------------

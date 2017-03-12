@@ -1,1 +1,1 @@
-Game.exe -ai1 Kurt -ai2 BAI
+Game.exe -ai1 ScannerBot -ai2 BAI

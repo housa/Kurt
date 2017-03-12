@@ -11,3 +11,8 @@ C:\Users\alexa\Data\sharpShooter\Kurt\aiLibs\NyKurt.dll
 C:\Users\alexa\Data\sharpShooter\Kurt\aiLibs\NyKurt.pdb
 C:\Users\alexa\Data\sharpShooter\Kurt\NyKurt\obj\Debug\NyKurt.dll
 C:\Users\alexa\Data\sharpShooter\Kurt\NyKurt\obj\Debug\NyKurt.pdb
+C:\SharpShooter\Kurt\aiLibs\NyKurt.dll
+C:\SharpShooter\Kurt\aiLibs\NyKurt.pdb
+C:\SharpShooter\Kurt\NyKurt\obj\Debug\GameAI.csprojResolveAssemblyReference.cache
+C:\SharpShooter\Kurt\NyKurt\obj\Debug\NyKurt.dll
+C:\SharpShooter\Kurt\NyKurt\obj\Debug\NyKurt.pdb

@@ -14,6 +14,8 @@ namespace GameAI
        private static bool aiTurningRight = true;
        private static Random rnd = new Random();
 
+        private static bool prepared = false;
+
 
        [ConsoleFunction]
        public static PlayerAction NyKurt(FeatureVector vector)
@@ -32,6 +34,13 @@ namespace GameAI
        private static PlayerAction SearchForOpponent(FeatureVector vector)
        {
             Console.WriteLine("No sighting");
+
+            if (!prepared)
+            {
+                prepared = true;
+                return PlayerAction.Prepare;
+            }
+            prepared = false;
 
             if (vector.DistanceToObstacleLeft < 4 || vector.DistanceToObstacleRight < 4)
             {
@@ -67,9 +76,11 @@ namespace GameAI
     private static PlayerAction PursueOpponent(FeatureVector vector)
        {
            if (playerInRange && vector.ShootDelay == 0)
-               return PlayerAction.Shoot;
+            {
+                return PlayerAction.Shoot;
+            }
 
-           if (tookDamage && vector.TicksSinceDamage > 12)
+            if (tookDamage && vector.TicksSinceDamage > 12)
                return PlayerAction.MoveLeft;
 
            if (vector.DeltaDamageProb < 0.0)
